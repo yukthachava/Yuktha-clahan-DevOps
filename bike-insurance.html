@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bike Insurance Application Form</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Bike Insurance Application Form</h2>
+        <form action="/submit-insurance" method="POST">
+            <div class="form-group">
+                <label for="fullName">Full Name</label>
+                <input type="text" id="fullName" name="fullName" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phoneNumber">Phone Number</label>
+                <input type="tel" id="phoneNumber" name="phoneNumber" required>
+            </div>
+
+            <div class="form-group">
+                <label for="dob">Date of Birth</label>
+                <input type="date" id="dob" name="dob" required>
+            </div>
+
+            <div class="form-group">
+                <label for="bikeMake">Bike Make</label>
+                <input type="text" id="bikeMake" name="bikeMake" required>
+            </div>
+
+            <div class="form-group">
+                <label for="bikeModel">Bike Model</label>
+                <input type="text" id="bikeModel" name="bikeModel" required>
+            </div>
+
+            <div class="form-group">
+                <label for="registrationNumber">Bike Registration Number</label>
+                <input type="text" id="registrationNumber" name="registrationNumber" required>
+            </div>
+
+            <div class="form-group">
+                <label for="purchaseDate">Date of Purchase</label>
+                <input type="date" id="purchaseDate" name="purchaseDate" required>
+            </div>
+
+            <div class="form-group">
+                <label for="insuranceType">Type of Insurance</label>
+                <select id="insuranceType" name="insuranceType" required>
+                    <option value="comprehensive">Comprehensive</option>
+                    <option value="third-party">Third-Party</option>
+                    <option value="own-damage">Own Damage</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="nomineeName">Nominee Name</label>
+                <input type="text" id="nomineeName" name="nomineeName" required>
+            </div>
+
+            <div class="form-group">
+                <label for="nomineeRelation">Nominee Relation</label>
+                <input type="text" id="nomineeRelation" name="nomineeRelation" required>
+            </div>
+
+            <div class="form-group">
+                <label for="address">Address</label>
+                <textarea id="address" name="address" rows="4" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="pinCode">PIN Code</label>
+                <input type="text" id="pinCode" name="pinCode" required>
+            </div>
+
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
